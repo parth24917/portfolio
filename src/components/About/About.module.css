@@ -1,0 +1,94 @@
+.imgz {
+    position: absolute;
+    left: 62%;
+    
+    background-color: transparent;
+    height: 550px;
+    width: 530px;
+    
+    
+}
+  
+  .image {
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    animation: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    
+ 
+  }
+  .heading {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 50px;
+    background-color: transparent;
+  }
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .topBlur{
+    position: absolute;
+    width: 750px;
+    height: 200px;
+    
+    top: 150px;
+    left: 620px;
+    border: 764px;
+    background-color: crimson;
+    filter: blur(150px);
+    z-index: 0;
+    
+    
+  }
+  .Container { 
+    position: absolute;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    width: 950px;
+    height: 450px;
+    left: 40px;
+    border-style: dashed;
+    border-radius: 30px;
+    border-color: #FFFFFF;
+   
+    
+     /* added to make the inner divs align horizontally */
+  
+    background-color: transparent;
+    
+   
+     /* adjust the value as needed */
+  }
+  .outer{
+    position: relative;
+    
+
+    top: 450px;
+    
+    
+  }
+  .red{
+    color: red;
+    background-color: transparent;
+  }
+  .description{
+    color: #f5f5f5;
+    font-size: 33px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+  }

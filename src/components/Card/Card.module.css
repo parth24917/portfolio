@@ -1,0 +1,206 @@
+/* .card {
+    position: relative;
+    
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden;
+  
+    
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    
+    transition: transform 0.3s ease;
+    top: 214px;
+    left: 180px;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cardbody {
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .cardtitle {
+    font-size: 60px;
+    margin: 10px 0;
+    font-family: cursive;
+    color: darkred;
+    background-color: transparent;
+  }
+  
+  .cardprice {
+    border-radius: 10px;
+    padding: 10px;
+    width: 450px;
+    height: 100px;
+    color: blue;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cardbutton {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9.73611px 29.2083px;
+    gap: 9.74px;
+    
+    position: absolute;
+    width: 204.17px;
+    height: 41.47px;
+    left: 347px;
+    top: 510px;
+    
+    background: #C10A1E;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #C10A1E;
+    border-radius: 4.86806px;
+    transition: transform 0.3s ease;
+    
+        
+  }
+  .text{
+    position: absolute;
+    color: aliceblue;
+    border: 0cm;
+    background-color: transparent;
+    font-weight: bold;
+  }
+  .cardbutton:hover {
+    transform: scale(1.2);
+  }
+  
+ 
+
+   */
+   .above{
+    position: relative;
+top: 214px;
+    left: 180px;
+    background-color: transparent;
+   }
+   .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 20 px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+    margin: 20px;
+    overflow: hidden;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    
+    transition: transform 0.3s ease;
+    background-color: #1e1d1d;
+  }
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    background-color: transparent;
+  }
+  
+  .cardheading {
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    
+    color: crimson;
+    border-style: solid;
+    border-color: #C10A1E;
+    width: 100%;
+    border-radius: 10px;
+    /* font-family: 'Panchang', sans-serif; */
+    
+    background-color: transparent;
+  }
+  
+  .cardtext {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    
+    background-color: transparent;
+    /* font-family: 'Kalam', sans-serif; */
+  }
+  
+  .cardbuttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  .cardbutton {
+    
+    color: #fff;
+   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    background: #C10A1E;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #C10A1E;
+    border-radius: 4.86806px;
+    transition: transform 0.3s ease;
+  }
+  .cardbutton:hover {
+    transform: scale(1.1);
+  }
+  .cardbutton a {
+    text-decoration: none;
+  }
+  .card-button:hover {
+    background-color: #3e8e41;
+  }
+  .text{
+    position: relative;
+    color: aliceblue;
+    border: 0cm;
+    background-color: transparent;
+    font-weight: bold;
+    
+  }

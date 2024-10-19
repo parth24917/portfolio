@@ -1,0 +1,91 @@
+.img{
+    position: absolute;
+   
+   left: 820px;
+   text-align: center;
+   
+    background-color: transparent;
+    
+
+}
+.mask{
+    position: absolute;
+    width: 40%;
+    height: 60;
+    left: 1240px;
+    top: 250px;
+    z-index: 2;
+    background-color: transparent;
+}
+.web{
+    position: relative;
+    left: 593px;
+    transform: rotate(180deg);
+    top: 605px;
+    width: 15%;
+    height: 30%;
+    z-index: 2;
+}
+
+.container{
+    position: relative;
+    top: 2230px;
+    
+    padding: 0;
+    
+    
+    
+   
+    
+}
+.form{
+    
+    position: absolute;
+    left: 700px;
+    top: 700px;
+}
+.nimg{
+   display: inline-block;
+    width: 800px;
+    height: 600px;
+    background-color: transparent;
+}
+.title{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 86px;
+    color: azure;
+    margin-left: 10px;
+    
+    
+}
+.p{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: crimson;
+    top: 100px;
+    margin-left: 40px;
+    background-color: transparent;
+    
+}
+.socialIcons{
+    position: relative;
+    top: 300px;
+    background-color: transparent;
+    margin-left: 40px;
+    display: flex;
+   
+    
+
+}
+.icon{
+    color: crimson;
+    font-size: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+.icon:hover {
+    transform: scale(1.2); 
+}

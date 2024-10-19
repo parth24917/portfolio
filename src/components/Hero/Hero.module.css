@@ -1,0 +1,87 @@
+.content{
+  position: absolute;
+  width: 200px;
+  height: 148px;
+  left: 20%;
+  top: 188px;
+  
+  margin: 0;
+    padding: 0;
+    background-color: transparent;
+
+}
+.above{
+  position: relative;
+top: 214px;
+  left: 180px;
+  background-color: transparent;
+ 
+ }
+.title{
+    /* Parth Kumar */
+
+
+font-family: 'Palatino',serif;
+font-style: normal;
+font-weight: 800;
+font-size: 96px;
+line-height: 144px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+.imageContainer {
+   
+   /* align the image to the left */
+    position: absolute;
+    background-color: transparent;
+    top:2px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  }
+  
+  .spiderImage {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 200px; /* adjust the width to your liking */
+    height: 350px; /* adjust the height to your liking */
+    margin: 0;
+    padding: 0;
+    left: 0;
+    background-color: transparent;
+    animation: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+@keyframes floating{
+  0% {
+    transform: translate(0,0px);
+  }
+  50%{
+    transform: translate(0,10px);
+  }
+  100%{
+    transform: translate(0,-0px);
+  }
+}
+.topBlur{
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  
+  top: 290px;
+  left: 0vw;
+  border: 764px;
+  background-color: crimson;
+  filter: blur(100px);
+  z-index: 0;
+  
+  
+}
