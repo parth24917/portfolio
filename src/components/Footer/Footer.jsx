@@ -20,10 +20,18 @@ function Footer() {
         <h1 className={styles.title}>Contact Me</h1>
         <p className={styles.p}>Get in touch</p>
         <div className={styles.socialIcons}>
-  <FaWhatsapp className={styles.icon} />
-  <FaGithub className={styles.icon} />
-  <FaLinkedin className={styles.icon} />
-  <IoIosMail className={styles.icon} />
+ <a href="https://wa.me/+917838501035" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className={styles.icon} />
+        </a>
+        <a href="http://github.com/parth24917" target="_blank" rel="noopener noreferrer">
+          <FaGithub className={styles.icon} />
+        </a>
+        <a href="http://linkedin.com/in/parth-kr" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className={styles.icon} />
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${parthk240203@gmail.com}" target="_blank" rel="noopener noreferrer">
+          <IoIosMail className={styles.icon} />
+          </a>
 </div>
        
     
