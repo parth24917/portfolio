@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './carousel.module.css';
+import './Carousel.module.css';
 import Card from "../../components/Card/Card"
 import styles from "../../components/Carousel/Carousel.module.css"
 import tour from "../../assets/tourism.jpg"
