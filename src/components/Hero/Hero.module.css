@@ -1,0 +1,118 @@
+.content{
+  position: absolute;
+  width: 200px;
+  height: 148px;
+  left: 20%;
+  top: 188px;
+  
+  margin: 0;
+    padding: 0;
+    background-color: transparent;
+
+}
+.above{
+  position: relative;
+top: 214px;
+  left: 180px;
+  background-color: transparent;
+ 
+ }
+.title{
+    /* Parth Kumar */
+
+
+font-family: 'Poppins',serif;
+font-style: normal;
+font-weight: 800;
+font-size: 106px;
+line-height: 144px;
+display: flex;
+align-items: center;
+background: linear-gradient(to right, #f9f9f9, #000000); 
+-webkit-background-clip: text;
+background-size: 200% 100%; /* Increase the size of the background */
+animation: gradientMove 3s ease infinite;
+-webkit-text-fill-color: transparent;
+background-color: transparent;
+
+
+
+
+}
+.para{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  color: aliceblue;
+  background-color: transparent;
+}
+
+@keyframes gradientMove {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 0%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+.text{
+  font-family: 'arial',serif;
+  font-weight: 600;
+  font-size: 72px;
+  color: rgb(166, 5, 5);
+  background-color: transparent;
+}
+.imageContainer {
+   
+   /* align the image to the left */
+    position: absolute;
+    background-color: transparent;
+    top:2px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  }
+  
+  .spiderImage {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 200px; /* adjust the width to your liking */
+    height: 350px; /* adjust the height to your liking */
+    margin: 0;
+    padding: 0;
+    left: 0;
+    background-color: transparent;
+    animation: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+@keyframes floating{
+  0% {
+    transform: translate(0,0px);
+  }
+  50%{
+    transform: translate(0,10px);
+  }
+  100%{
+    transform: translate(0,-0px);
+  }
+}
+.topBlur{
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  
+  top: 290px;
+  left: 0vw;
+  border: 764px;
+  background-color: crimson;
+  filter: blur(100px);
+  z-index: 0;
+  
+  
+}

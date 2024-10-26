@@ -1,0 +1,66 @@
+.carouselcontainer {
+  position: relative;
+  
+  width: 1300px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  max-width: max-content;
+  border: 1px solid #d10000;
+  border-radius: 10px;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+ 
+ background-color: transparent;
+ 
+  font-family: 'Times New Roman', Times, serif;
+}
+.card{
+  height: 550px;
+  width: 100px;
+}
+.carouselitem {
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+.customdotliststyle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.customdotliststyle li {
+  margin: 0 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.customdotliststyle li button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.customdotliststyle li button.active {
+  background-color: #337ab7;
+}

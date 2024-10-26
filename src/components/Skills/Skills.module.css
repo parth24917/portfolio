@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Carolyna+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap');
+
+.container {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  top: 1300px;
+}
+
+.h1 {
+  background-image: linear-gradient(to bottom, black, red);
+  padding-left: 30px;
+  font-size: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  padding-bottom: 10px;
+
+  
+  
+}
+.logos{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+
+}
+
+.logosslide{
+  display: inline-block;
+  animation: slide 15s infinite linear;
+}
+.logosslide img{
+  height: 200px;
+  margin: 0 40px;
+
+}
+
+.logos:before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 0, 0), #ffffff);
+}
+
+.logos:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(235, 227, 227, 0), rgb(255, 255, 255));
+}
+.logos:before,
+.logos:after{
+  position: absolute;
+  top: 0px;
+  width: 80px;
+  height: 300px;
+  content: "";
+  z-index: 2;
+}
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+  
+}

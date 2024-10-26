@@ -1,0 +1,65 @@
+@import "../../assets/FontsFor/sharpie.css";
+.container{
+    position: absolute;
+    top: 1815px;
+   
+    
+}
+ 
+
+.img{
+    position: relative;
+    height:150px;
+    width: 150px;
+    
+    background-color: transparent;
+}
+.abs{
+    position: relative;
+    left: 1060px;
+    top: -140px;
+    height: 570px;
+    width: 420px;
+    background-color: transparent;
+    overflow: hidden;
+    
+
+}
+.nimg{
+    
+    background-color: transparent;
+    height: 600px;
+    width: 350px;
+
+}
+
+.text{
+    position: absolute;
+    left: 170px;
+    top: 0px;
+    height: 150px;
+    width: 550px;
+    align-items: center;
+    background-color: transparent;
+   
+}
+.h1{
+    position: relative;
+    font-family: 'Sharpie', sans-serif;
+    color: #ffffff;
+    font-size: 106px;
+    background-color: transparent;
+    
+    
+    
+}
+.sample{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1550px;
+    align-self: center;
+    background: radial-gradient(circle, #2f5eea, #000000);
+    
+}
