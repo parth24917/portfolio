@@ -7,6 +7,7 @@ import tour from "../../assets/tourism.jpg"
 import sport from"../../assets/sport.png"
 import shop from "../../assets/shop.png"
 import newr from "../../assets/new.png"
+import movie from "../../assets/movie.png"
 
 
 const responsive = {
@@ -33,6 +34,17 @@ const CarouselComponent = () => {
       description: 'Developed a full-stack MERN tourism website to showcase travel packages, enabling users to browse and submit inquiries stored in MongoDB. The backend uses Node.js and Express, while the React frontend offers a dynamic experience',
       demoLink: 'https://travel-react-alpha.vercel.app/',
       sourceLink: 'https://github.com/parth24917/travel-react',
+      titleFont: 'Sentient', 
+      descriptionFont: 'Calibri',
+      demoBtText: 'Live Demo',
+      sourceBtText: 'View Source Code',
+    },
+    {
+      image: movie,
+      heading: 'Movie Browser',
+      description: 'Built a responsive Movie Browser app using ReactJS with dynamic data from a third-party API, custom hooks for managing favorites, and interactive features like real-time search and detail pages.',
+      demoLink: 'https://movie-browser-alpha.vercel.app/',
+      sourceLink: 'https://movie-browser-alpha.vercel.app/',
       titleFont: 'Sentient', 
       descriptionFont: 'Calibri',
       demoBtText: 'Live Demo',
