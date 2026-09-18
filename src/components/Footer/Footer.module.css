@@ -1,12 +1,8 @@
 .img{
     position: absolute;
-   
    left: 820px;
    text-align: center;
-   
     background-color: transparent;
-    
-
 }
 .mask{
     position: absolute;
@@ -28,15 +24,8 @@
 }
 
 .container{
-    position: relative;
-    top: 2250px;
-    
-    padding: 0;
-    
-    
-    
-   
-    
+    position: relative;   
+    padding: 0;   
 }
 .form{
     
@@ -52,7 +41,7 @@
 }
 .title{
     position: absolute;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Sharpie', sans-serif;
     font-weight: 600;
     font-size: 86px;
     color: azure;

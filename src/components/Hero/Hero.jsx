@@ -1,58 +1,76 @@
-import React from 'react'
-import styles from "../Hero/Hero.module.css"
-import spider from "../../assets/tom.png"
-import Card from "../Card/Card"
-const myEmail = 'parthk240203@gmail.com'
-const cardData = [
-  {
-    
-    heading: 'Parth Kumar',
-    description: 'Your friendly neighbourhood Full stack web developer',
-    demoLink: 'https://drive.google.com/file/d/16ErmcQgGv_ipjyaYW3SgJbQBK9HvY8Ub/view?usp=sharing',
-    sourceLink: `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${myEmail}`,
+import React from "react";
+import styles from "./Hero.module.css";
 
-    showImage: true,
-  },
-  
-  // Add more card data objects as needed
-];
-const Hero = () => {
-  return <section id='hero'>
-    {/* <div className={styles.topBlur}/>
-    <div className={styles.imageContainer}>
-    
-      <img src={spider} className={styles.spiderImage}></img>
-    </div> */}
-    
-    
-    <div className={styles.above}>
-      {/* {cardData.map((card, index) => (
-        <Card
-          key={index}
-          image={card.image}
-          heading={card.heading}
-          description={card.description}
-          demoLink={card.demoLink}
-          sourceLink={card.sourceLink}
-          showImage={card.showImage}
-          titleFont="'Panchang', sans-serif"
-          descriptionFont="'Kalam', sans-serif"
-          demoBtText="View CV"
-          sourceBtText="Contact Me"
-          height={250}
-          width={500}
-        />
-      ))} */}
-      <p className={styles.text}>Hi, I am</p>
-      <p className={styles.title}>Parth Kumar</p>
-      <p className={styles.para}>Problem Solver | Software Engineer | Innovator</p>
-    </div>
-      
-        
-     
-      
-    
-  </section>
+import web from "../../assets/web.png";
+import spider from "../../assets/spider.png";
+import miguel from "../../assets/neon.png";
+import cv from "../../assets/cv.pdf"
+import Button from "../Button/Button";
+
+
+const handleProjects = () => {
+  document.getElementById("projects")?.scrollIntoView({
+    behavior: "smooth",
+  });
 };
 
-export default Hero
+const handleCV = () => {
+  window.open(cv, "_blank");
+};
+const Hero = () => {
+  return (
+    <>
+      {/* Background Images */}
+      <img src={web} className={styles.leftImage} alt="" />
+      <img src={spider} className={styles.rightImage} alt="" />
+
+      {/* HERO */}
+      <section id="hero" className={styles.hero}>
+        <div className={styles.above}>
+          <p className={styles.text}>Hi, I am</p>
+
+          <p className={styles.title}>Parth Kumar</p>
+
+          <p className={styles.para}>
+            Problem Solver | Software Engineer | Innovator
+          </p>
+          <div className={styles.buttons}>
+            <Button
+              title="View Projects"
+              type="blue"
+              onClick={handleProjects}
+            />
+
+            <Button
+              title="Download CV"
+              type="red"
+              onClick={handleCV}
+            />
+        </div>
+      </div>
+      <div className={styles.outer} id="about">
+        <div className={styles.topBlur}></div>
+
+        <div className={styles.container}>
+          <h1 className={styles.heading}>A Bit</h1>
+
+          <h1 className={styles.red}>About me</h1>
+
+          <p className={styles.description}>
+            Hey, I’m Parth! I’m a software engineer with 1+ year of experience building responsive, scalable web applications using React, Next.js, TypeScript, and the MERN stack. I enjoy solving real-world problems, building clean and reusable components, and turning ideas into functional products. Always eager to grow and explore new technologies, I’m constantly improving my skills and looking for opportunities to learn, collaborate, and build something awesome together!
+
+          </p>
+        </div>
+
+        <div className={styles.imgz}>
+          <img src={miguel} className={styles.image} alt="" />
+        </div>
+      </div>
+    </section >
+
+  
+    </>
+  );
+};
+
+export default Hero;

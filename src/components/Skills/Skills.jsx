@@ -1,57 +1,97 @@
-import React, { useState, useEffect } from 'react';
-import styles from "../Skills/Skills.module.css";
-import css from "../../assets/css.png"
-import html from "../../assets/html.png"
-import js from "../../assets/js.png"
-import mysql from "../../assets/mysql.png"
-import react from "../../assets/react.png"
-import c from "../../assets/c.svg"
-import ex from "../../assets/ex.png"
-import mongo from "../../assets/mongodb.png"
-import node from "../../assets/node.png"
-import powershell from "../../assets/powershell.png"
-import linux from "../../assets/linux.png"
+import React from "react";
+import styles from "./Skills.module.css";
+import web from "../../assets/web.png"
+const skillGroups = [
+  {
+    number: "01",
+    title: "Frontend",
+    skills: [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Redux",
+      "React Native",
+    ],
+  },
+  {
+    number: "02",
+    title: "Backend",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "REST APIs",
+      "JWT",
+      "Python",
+    ],
+  },
+  {
+    number: "03",
+    title: "Tools & Workflow",
+    skills: [
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "Jira",
+      "Azure",
+      "Figma",
+      "Postman",
+    ],
+  },
+  {
+    number: "04",
+    title: "Core Knowledge",
+    skills: [
+      "Data Structures",
+      "OOPS",
+      "DBMS",
+      "API Integration",
+      "Responsive Design",
+      "UI/UX",
+      "Problem Solving",
+      "C++"
+    ],
+  },
+];
+
 const Skills = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.h1}>My Skills</h1>
-      <div className={styles.logos}>
-        <div className={styles.logosslide}>
-          <img src={css}/>
-          <img src={html}/>
-          <img src={js}/>
-          <img src={mysql}/>
-          <img src={react}/>
-          <img src={c}/>
-          <img src={ex}/>
-          <img src={mongo}/>
-          <img src={node}/>
-          <img src={powershell}/>
-          <img src={linux}/>
-
-
+    <section className={styles.skillsSection}>
+      <div className={styles.projectHeader}>
+        <img src={web} className={styles.img} />
+        <div className={styles.text}>
+          <h1 className={styles.h1}>My Skills</h1>
         </div>
-        <div className={styles.logosslide}>
-          <img src={css}/>
-          <img src={html}/>
-          <img src={js}/>
-          <img src={mysql}/>
-          <img src={react}/>
-          <img src={c}/>
-          <img src={ex}/>
-          <img src={mongo}/>
-          <img src={node}/>
-          <img src={powershell}/>
-          <img src={linux}/>
-
-
-        </div>
-
       </div>
-      
-        </div>
-      
-    
+
+      <div className={styles.skillsContainer}>
+        {skillGroups.map((group) => (
+          <div className={styles.skillGroup} key={group.number}>
+            <div className={styles.groupHeader}>
+              <span className={styles.groupNumber}>{group.number}</span>
+
+              <h3 className={styles.groupTitle}>
+                {group.title}
+              </h3>
+            </div>
+
+            <div className={styles.skillList}>
+              {group.skills.map((skill) => (
+                <div className={styles.skill} key={skill}>
+                  <span>{skill}</span>
+                  <span className={styles.arrow}>↗</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

@@ -8,8 +8,7 @@ import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoIosMail } from "react-icons/io";
 function Footer() {
   return (
-    <div className={styles.container} id='footer'>
-      
+    <div className={styles.container} id='footer'>     
       <img src={web} className={styles.web}></img>
       
       <ContactForm className={styles.form}></ContactForm>

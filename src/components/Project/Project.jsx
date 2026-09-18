@@ -4,7 +4,7 @@ import Card from "../Card/Card"
 import web from "../../assets/web.png"
 import spiderman from "../../assets/spiderman.png"
 import CarouselComponent from "../Carousel/Carousel";
-
+import ProjectStack from "../ProjectStack/ProjectStack";
 const Project = () => {
   return (
     <div className={styles.container}>
@@ -14,8 +14,8 @@ const Project = () => {
         <h1 className={styles.h1}>My Projects</h1>
        
         </div>
-        <div className={styles.sample}>
-          <CarouselComponent/>
+        <div>
+          <ProjectStack/>
         </div>
         
 

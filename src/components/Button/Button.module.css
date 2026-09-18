@@ -1,0 +1,60 @@
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 25px;
+  min-width: 140px;
+  height: 48px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* BLUE */
+.blue {
+  color: white;
+  background: rgba(10, 15, 25, 0.85);
+  border: 2px solid #123c69;
+  box-shadow: 4px 4px 0 #123c69;
+}
+
+.blue:hover {
+  background: #123c69;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #e63946;
+}
+
+/* RED */
+.red {
+  color: white;
+  background: #e63946;
+  border: 2px solid #e63946;
+  box-shadow: 4px 4px 0 #123c69;
+}
+
+.red:hover {
+  background: #ff4655;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #123c69;
+}
+
+/* ACTIVE */
+.button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .button {
+    min-width: 130px;
+    padding: 12px 18px;
+  }
+}
+

@@ -1,118 +1,375 @@
-.content{
+/* =========================
+   BACKGROUND IMAGES
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.leftImage {
   position: absolute;
-  width: 200px;
-  height: 148px;
-  left: 20%;
-  top: 188px;
-  
-  margin: 0;
-    padding: 0;
-    background-color: transparent;
-
-}
-.above{
-  position: relative;
-top: 214px;
-  left: 180px;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 231.06px;
   background-color: transparent;
- 
- }
-.title{
-    /* Parth Kumar */
-
-
-font-family: 'Poppins',serif;
-font-style: normal;
-font-weight: 800;
-font-size: 106px;
-line-height: 144px;
-display: flex;
-align-items: center;
-background: linear-gradient(to right, #f9f9f9, #000000); 
--webkit-background-clip: text;
-background-size: 200% 100%; /* Increase the size of the background */
-animation: gradientMove 3s ease infinite;
--webkit-text-fill-color: transparent;
-background-color: transparent;
-
-
-
-
+  z-index: 0;
+  pointer-events: none;
 }
-.para{
+
+.rightImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1200px;
+  height: 1200px;
+  background-color: transparent;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.content {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 120px 6% 80px;
+  box-sizing: border-box;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.above {
+  position: relative;
+  left: 0;
+  top: 250px;
+  background-color: transparent;
+  padding-left: 50px;
+  z-index: 2;
+}
+
+.title {
+   font-family: 'Permanent Marker', cursive;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(60px, 8vw, 106px);
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #f9f9f9, #000000);
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  animation: gradientMove 3s ease infinite;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  margin: 0;
+}
+
+.para {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 32px;
+  font-size: clamp(20px, 3vw, 32px);
   color: aliceblue;
   background-color: transparent;
+  margin: 20px 0 0;
+}
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+  align-items: center;
+  background-color: transparent;
 }
 
-@keyframes gradientMove {
-  0% {
-      background-position: 0% 0%;
-  }
-  50% {
-      background-position: 100% 0%;
-  }
-  100% {
-      background-position: 0% 0%;
-  }
+.projectButton,
+.cvButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 25px;
+
+  min-width: 140px;
+  height: 48px;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  border-radius: 4px;
+
+  transition: all 0.25s ease;
 }
-.text{
-  font-family: 'arial',serif;
+
+/* View Projects */
+
+.projectButton {
+  color: white;
+
+  background: rgba(10, 15, 25, 0.85);
+
+  border: 2px solid #123c69;
+
+  box-shadow: 4px 4px 0 #123c69;
+}
+
+.projectButton:hover {
+  background: #123c69;
+
+  transform: translate(2px, 2px);
+
+  box-shadow: 2px 2px 0 #e63946;
+}
+
+/* Download CV */
+
+.cvButton {
+  color: white;
+
+  background: #e63946;
+
+  border: 2px solid #e63946;
+
+  box-shadow: 4px 4px 0 #123c69;
+}
+
+.cvButton:hover {
+  background: #ff4655;
+
+  transform: translate(2px, 2px);
+
+  box-shadow: 2px 2px 0 #123c69;
+}
+
+.projectButton:active,
+.cvButton:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+.text {
+  font-family: 'Permanent Marker', cursive;
   font-weight: 600;
-  font-size: 72px;
+  font-size: clamp(40px, 6vw, 72px);
   color: rgb(166, 5, 5);
   background-color: transparent;
 }
-.imageContainer {
-   
-   /* align the image to the left */
-    position: absolute;
-    background-color: transparent;
-    top:2px;
-    left: 0px;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
-  }
-  
-  .spiderImage {
-    position: absolute;
-    top: 230px;
-    left: 0;
-    width: 200px; /* adjust the width to your liking */
-    height: 350px; /* adjust the height to your liking */
-    margin: 0;
-    padding: 0;
-    left: 0;
-    background-color: transparent;
-    animation: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
-@keyframes floating{
+
+
+/* =========================
+   ABOUT
+========================= */
+
+
+.outer {
+  position: relative;
+  top: 450px;
+  min-height: 650px;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Red glow behind the card */
+.topBlur {
+  position: absolute;
+  width: 750px;
+  height: 250px;
+  top: 100px;
+  left: 550px;
+  background-color: crimson;
+  filter: blur(150px);
+  opacity: 0.3;
+
+  z-index: 0;
+}
+
+/* Glass card */
+.container {
+  position: relative;
+
+  margin: 20px;
+  padding: 35px 45px;
+
+  width: 850px;
+  min-height: 400px;
+
+  left: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.55),
+    0 0 35px rgba(220, 20, 60, 0.2);
+
+
+}
+
+/* About heading */
+.heading {
+  margin: 0;
+
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  font-weight: normal;
+
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* Red heading */
+.red {
+  margin: -5px 0 20px;
+
+  font-family: 'Permanent Marker', cursive;
+  font-size: 42px;
+  font-weight: normal;
+
+  color: red;
+  background-color: transparent;
+}
+
+/* Description */
+.description {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #f5f5f5;
+
+  font-size: 23px;
+  line-height: 1.5;
+
+  font-style: normal;
+  font-family: Arial, sans-serif;
+
+  background-color: transparent;
+}
+
+/* Miguel image */
+.imgz {
+  position: absolute;
+
+  left: 62%;
+  top: 10px;
+
+  width: 530px;
+  height: 550px;
+
+  background-color: transparent;
+
+  z-index: 3;
+}
+
+.image {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  background-color: transparent;
+
+  animation: floating 3s ease-in-out infinite;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes gradientMove {
   0% {
-    transform: translate(0,0px);
+    background-position: 0% 0%;
   }
-  50%{
-    transform: translate(0,10px);
+
+  50% {
+    background-position: 100% 0%;
   }
-  100%{
-    transform: translate(0,-0px);
+
+  100% {
+    background-position: 0% 0%;
   }
 }
-.topBlur{
-  position: absolute;
-  width: 150px;
-  height: 300px;
-  
-  top: 290px;
-  left: 0vw;
-  border: 764px;
-  background-color: crimson;
-  filter: blur(100px);
-  z-index: 0;
-  
-  
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .buttons {
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.projectButton,
+.cvButton {
+  min-width: 130px;
+  padding: 12px 18px;
+}
+  .content {
+    padding: 100px 6% 60px;
+  }
+
+  .rightImage {
+    width: 700px;
+    height: 700px;
+  }
+
+  .leftImage {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 80px 5% 50px;
+  }
+
+  .rightImage {
+    width: 500px;
+    height: 500px;
+  }
+
+  .leftImage {
+    width: 120px;
+    height: auto;
+  }
 }
